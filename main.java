@@ -1,5 +1,5 @@
 //This is a repository
-public class AddNumbers {
+public class main {
   //VivaswanShukla
     public static void main(String[] args) {
         int num1 = 5;
