@@ -1,3 +1,4 @@
+// Aman Verma (Binary Search Unsorted Array)
 import java.util.*;
 public class binarySearchUnsort{
 	public static void main(String args[]){
@@ -9,9 +10,6 @@ public class binarySearchUnsort{
 		for(int i=0;i<size;i++){
 			arr[i]=obj.nextInt();
 		}
-
-        System.out.println("Sorted Array");
-		Arrays.sort(arr);
 	    System.out.println("Enter the target number");
 	    int target=obj.nextInt();
 
