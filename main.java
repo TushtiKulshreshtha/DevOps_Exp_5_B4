@@ -199,3 +199,20 @@ public class ForLoopExample {
     }
 }
 //***********************************************************************
+	// printing bill to the user for buying items//
+//surya
+import java.util.*;
+class add{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        float pencil=sc.nextFloat();
+        float pen=sc.nextFloat();
+        float eraser=sc.nextFloat();
+        //bill=(org amount)+(org amout*18/100)
+        float sum=pencil+pen+eraser;
+        System.out.println(sum);
+        float bill=sum+(sum*0.18f);
+        System.out.println("The bill for your shopping including GST is : "+bill);
+
+    }
+}
