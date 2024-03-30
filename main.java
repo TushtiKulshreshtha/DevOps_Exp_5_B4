@@ -1,3 +1,4 @@
+// Aman Verma (Binary Search Unsorted Array)
 import java.util.*;
 public class binarySearchUnsort{
 	public static void main(String args[]){
@@ -9,9 +10,6 @@ public class binarySearchUnsort{
 		for(int i=0;i<size;i++){
 			arr[i]=obj.nextInt();
 		}
-
-        System.out.println("Sorted Array");
-		Arrays.sort(arr);
 	    System.out.println("Enter the target number");
 	    int target=obj.nextInt();
 
@@ -131,45 +129,3 @@ public class QuickSort {
 }
 
 //--------------------------------------------------------------------------------------------
-
-
-//Akarsh Gupta
-public class CountingSort {
-    public static void main(String[] args) {
-        int[] arr = { 3, 8, 90, 12, 1, 76, 9 };
-        int n = arr.length;
-        int[] output = new int[n + 1];
-        int max = arr[0];
-        for (int i = 1; i < n; i++) {
-            if (arr[i] > max)
-                max = arr[i];
-        }
-        int[] count = new int[max + 1];
-
-        for (int i = 0; i < max; ++i) {
-            count[i] = 0;
-        }
-
-        for (int i = 0; i < n; ++i) {
-            ++count[arr[i]];
-        }
-
-        for (int i = 1; i <= max; ++i) {
-            count[i] += count[i - 1];
-        }
-
-        for (int i = n - 1; i >= 0; i--) {
-            output[count[arr[i]] - 1] = arr[i];
-            --count[arr[i]];
-        }
-
-        for (int i = 0; i < n; ++i) {
-            arr[i] = output[i];
-        }
-
-        System.out.println("After Counting Sort :");
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-    }
-}
