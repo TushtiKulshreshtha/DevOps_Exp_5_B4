@@ -183,4 +183,19 @@ public class PrintOddNumbers {
     }
 }
 //***********************************************************************
-	
+//Anishka Sinha 
+public class ForLoopExample {
+    public static void printNumbers(int n) {
+        // Using a for loop to print numbers from 1 to n
+        for (int i = 1; i <= n; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println(); // Print a newline after the loop
+    }
+
+    public static void main(String[] args) {
+        // Test the function with n = 10
+        printNumbers(10);
+    }
+}
+//***********************************************************************
