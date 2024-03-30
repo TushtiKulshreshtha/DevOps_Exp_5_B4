@@ -221,3 +221,42 @@ public class RectanglePattern {
         scanner.close();
     }
 }
+// **************************************************************
+// Vivaswan's Piece Of Code
+public class Pattern {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int row = scanner.nextInt();
+        
+        for (int i = 1; i <= row; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            int space = 2 * row - 2 * i;
+            for (int j = 1; j <= space; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        for (int i = row; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            int space = 2 * row - 2 * i;
+            for (int j = 1; j <= space; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        scanner.close();
+    }
+}
+// *****************************************************
