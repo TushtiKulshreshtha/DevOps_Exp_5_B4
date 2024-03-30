@@ -146,4 +146,36 @@ public class PrintOddNumbers {
     }
 }
 //***********************************************************************
-	
+//Anishka Sinha 
+public class ForLoopExample {
+    public static void printNumbers(int n) {
+        // Using a for loop to print numbers from 1 to n
+        for (int i = 1; i <= n; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println(); // Print a newline after the loop
+    }
+
+    public static void main(String[] args) {
+        // Test the function with n = 10
+        printNumbers(10);
+    }
+}
+//***********************************************************************
+	// printing bill to the user for buying items//
+//surya
+import java.util.*;
+class add{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        float pencil=sc.nextFloat();
+        float pen=sc.nextFloat();
+        float eraser=sc.nextFloat();
+        //bill=(org amount)+(org amout*18/100)
+        float sum=pencil+pen+eraser;
+        System.out.println(sum);
+        float bill=sum+(sum*0.18f);
+        System.out.println("The bill for your shopping including GST is : "+bill);
+
+    }
+}
