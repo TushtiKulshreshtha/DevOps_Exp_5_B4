@@ -63,8 +63,8 @@ public class Numbers {
         return a*b;
     }
 }
-//***********************************************************************
-//Syed Safi Work
+//********************************************************************
+//Vaibhav Work
 //insertion sort
 public class insertion {
     public static void main(String[] args) {
